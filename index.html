@@ -13,7 +13,9 @@
     <header>
       <h1>OOP & SOLID Principles Quiz</h1>
       <div class="progress">
-        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
         <span id="progressText">Question 1 of 59</span>
       </div>
     </header>
@@ -22,13 +24,14 @@
       <div id="quiz">
         <div class="question" id="questionText"></div>
         <div class="options" id="options"></div>
+        <div id="feedback" class="feedback hidden"></div>
         <button id="nextBtn" disabled>Next Question</button>
       </div>
 
       <div id="results" class="hidden">
         <h2>Quiz Completed!</h2>
         <p id="score"></p>
-        <p id="feedback"></p>
+        <p id="feedbackText"></p>
         <button id="restartBtn">Restart Quiz</button>
       </div>
     </main>
